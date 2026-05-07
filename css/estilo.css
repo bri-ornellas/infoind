@@ -19,13 +19,15 @@ header h1 {
     margin-bottom: 15px;
     margin-left: 30%;
 }
-header img{
+
+header img {
     width: 100px;
     height: 100px;
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 header {
     margin-top: 20px;
     background-color: rgb(41, 73, 73);
@@ -35,25 +37,35 @@ header {
     margin-left: 5%;
     border-radius: 20px;
 }
+
 header li {
-    display: inline;
     border-style: groove;
     padding: 5px;
     margin: 5px;
     background-color: rgb(31, 156, 115);
     font-size: 20px;
 }
-header ul{
+
+header ul {
     margin-top: 50px;
+    list-style-type: none;
 }
+
 header a {
     color: white;
 }
+
 header li:hover {
     background-color: green;
 }
+
 header a:hover {
     color: yellow;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
 }
 
 /* Main. */
@@ -66,64 +78,129 @@ main {
     border-radius: 20px;
     padding: 30px;
 }
-#info a{border-style: double;}
+
+#info a {
+    border-style: double;
+}
+
+#info {
+    background-color: rgb(21, 189, 30);
+    border-radius: 30px;
+    text-align: center;
+    height: 200px;
+    padding-top: 40px;
+}
+
 main li {
     margin-left: 20px;
 }
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
 }
+
 li {
     font-weight: 550;
 }
+
 a {
     font-weight: 550;
 }
+
 #sobre {
     margin-top: 10px;
 }
+
 #programa {
     margin-top: 10px;
 }
+
 #palestrantes {
     margin-top: 10px;
+    background-color: rgb(138, 255, 128);
+    border-radius: 30px;
+    text-align: center;
+    height: 600px;
 }
+
+#palestrantes h2 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #palestrantes img {
     margin-top: 20px;
     width: 150px;
     height: 150px;
     border-radius: 100%;
 }
+
 #palestrantes article {
-    display: inline-block;
     transition: transform 0.5s ease;
-    width: 30%;
-    margin-left: 2.35%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-#palestrantes article:hover{
+
+#palestrantes article:hover {
     transform: scale(1.2);
 }
+
+#info a {
+    background-color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#paragrafofodido {
+    margin-bottom: 10px;
+}
+
+#sobre p {
+    text-align: justify;
+}
+
 #inscricao {
-    margin-top: 30px;
-    width: 40%;
-    margin-left: 30%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 200%;
+    flex-wrap: wrap;
 }
+
 #botaoinsc {
-    margin-top: 10px;
-    width: 40%;
-    margin-left: 30%;
-    padding-left: 7.5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
-#palestrantes #img1 {
-    background-image: url(https://projetopassofundo.wiki.br/images/thumb/d/d2/Monteiro_Lobato.jpg/300px-Monteiro_Lobato.jpg);
+
+#botaoinsc form {
+    display: flex;
+}
+
+.butao{
+    width: 100px;
+    margin-left: 5px;
+}
+.butao .btn {
+    height: 80px;
+    background-color: rgb(3, 160, 3);
+    font-size: 25px;
+    color: white;
 }
 
 /* Footer. */
